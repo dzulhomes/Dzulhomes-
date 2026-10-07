@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DzulHomes | Hartanah Penang & Kedah</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f5;
+  color: #171717;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #c9a44c;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 65px 20px 75px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+.search-row input,
+.search-row select {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: #c9a44c;
+  border: none;
+  padding: 0 25px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+}
+
+.view-all {
+  color: #927321;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.location {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.features {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.details {
+  display: block;
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 30px;
+}
+
+footer strong {
+  color: #c9a44c;
+}
+
+@media (max-width: 800px) {
+  .properties {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-row {
+    flex-direction: column;
+  }
+
+  .search-btn {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 16px 20px;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
+
+  .hero {
+    padding: 50px 18px 60px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .properties {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DZUL<span>HOMES</span></div>
+
+  <nav>
+    <a href="#">Dijual</a>
+    <a href="#">Disewa</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <h1>Cari Rumah Anda</h1>
+
+  <p>Hartanah untuk dijual & disewa di Penang dan Kedah</p>
+
+  <div class="search-box">
+
+    <div class="search-row">
+
+      <input
+        type="text"
+        placeholder="Cari kawasan, taman atau projek..."
+      >
+
+      <select>
+        <option>Semua Jenis</option>
+        <option>Rumah Teres</option>
+        <option>Semi-D</option>
+        <option>Banglo</option>
+        <option>Apartment</option>
+        <option>Condominium</option>
+      </select>
+
+      <select>
+        <option>Semua Harga</option>
+        <option>Bawah RM200K</option>
+        <option>RM200K - RM300K</option>
+        <option>RM300K - RM500K</option>
+        <option>RM500K ke atas</option>
+      </select>
+
+      <button class="search-btn">CARI</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<main class="container">
+
+  <div class="section-title">
+    <h2>Rumah Terkini</h2>
+    <a href="#" class="view-all">Lihat Semua →</a>
+  </div>
+
+  <div class="properties">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80">
+
+      <div class="card-content">
+
+        <div class="price">RM320,000</div>
+
+        <h3>Rumah Teres 2 Tingkat</h3>
+
+        <div class="location">
+          📍 Sungai Petani, Kedah
+        </div>
+
+        <div class="features">
+          🛏 4 Bilik &nbsp; 🚿 3 Bilik Air
+          <br>
+          📐 1,400 sqft
+        </div>
+
+        <a href="#" class="details">Lihat Detail</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
+
+      <div class="card-content">
+
+        <div class="price">RM285,000</div>
+
+        <h3>Rumah Teres Setingkat</h3>
+
+        <div class="location">
+          📍 Kulim, Kedah
+        </div>
+
+        <div class="features">
+          🛏 3 Bilik &nbsp; 🚿 2 Bilik Air
+          <br>
+          📐 1,200 sqft
+        </div>
+
+        <a href="#" class="details">Lihat Detail</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80">
+
+      <div class="card-content">
+
+        <div class="price">RM1,200 / bulan</div>
+
+        <h3>Apartment Untuk Disewa</h3>
+
+        <div class="location">
+          📍 Seberang Jaya, Penang
+        </div>
+
+        <div class="features">
+          🛏 3 Bilik &nbsp; 🚿 2 Bilik Air
+          <br>
+          🛋 Fully Furnished
+        </div>
+
+        <a href="#" class="details">Lihat Detail</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+
+  <strong>DZULHOMES</strong>
+
+  <p style="margin-top:10px;">
+    Property Listing | Penang & Kedah
+  </p>
+
+  <p style="margin-top:15px;font-size:13px;color:#aaa;">
+    Rumah Untuk Dijual & Disewa
+  </p>
+
+</footer>
+
+</body>
+</html>
